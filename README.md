@@ -62,4 +62,52 @@ Por último, hay un manejo de error insuficiente,pues e realiza mediante impresi
 
 Refactorización del código:
 
+```
+def suma(num1, num2):
+    return num1 + num2
+
+def resta(num1, num2):
+    return num1 - num2
+
+def multiplicacion(num1, num2):
+    return num1 * num2
+
+def division(num1, num2):
+    if num2 != 0:
+        return num1 / num2
+    else:
+        print("No se puede dividir entre cero.")
+
+
+def calcular(operacion, num1, num2):
+    if operacion == 'suma':
+        return suma(num1, num2)
+    if operacion == 'resta':
+        return resta(num1, num2)
+    if operacion == 'multiplicacion':
+        return multiplicacion(num1, num2)
+    if operacion == 'division':
+        return division(num1, num2)
+    else:
+        print("Operación no soportada.")
+
+        
+
+```
+
+Aquí vemos como mejoramos todo lo que mencionamos anteriormente:
+
+1.**Eliminación de lógica de control basada en cadenas de texto:** Se reemplazaron las cadenas de texto con funciones específicas para cada operación. Esto hace que el código sea más legible y evita el uso de cadenas como control de flujo.
+
+2.**Modularización del código:** Se crearon funciones separadas para cada operación, siguiendo el principio de "una función, una responsabilidad". Esto mejora la organización del código y facilita su mantenimiento.
+
+3.**Mejora del manejo de errores:** Se reemplazaron las impresiones directas por el lanzamiento de excepciones con mensajes descriptivos. Esto proporciona un manejo de errores más robusto y comprensible.
+
+
+
+
+
+
+
+
 
