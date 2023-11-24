@@ -56,3 +56,10 @@ Asi mismo, notamos una clara falta de modulación, pues la función 'calcular' t
 
 Por último, hay un manejo de error insuficiente,pues e realiza mediante impresiones directas en lugar de lanzar excepciones, lo que no es una práctica robusta.
 
+***
+
+## Respuesta punto 2:<a name="id1"></a>
+
+Refactorización del código:
+
+
