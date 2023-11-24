@@ -47,3 +47,12 @@ def calcular(operacion, num1, num2):
 ***
 
 ## Respuesta punto 1:<a name="id1"></a>
+
+El código espagueti a menudo se caracteriza por la falta de estructura clara, la presencia de bucles y condicionales anidados en exceso; como podemos ver en el código anterior se observa un uso recurrente de sentencias condicionales anidadas (if), a esta característica se la denomina "Código Convolucionado", la cual complica en gran manera el seguimiento y la comprensión del algoritmo, siendo este además el ambiente propicio para errores de programación (bugs).
+
+Por otro lado, vemos el uso de cadenas de texto para la lógica de control, esto puede ocasionar que  sea difícil de entender y mantener. En este caso, la cadena 'operacion' se utiliza para determinar la operación a realizar.
+
+Asi mismo, notamos una clara falta de modulación, pues la función 'calcular' tiene múltiples responsabilidades, ya que maneja la lógica de todas las operaciones y también imprime mensajes de error. Esto viola el principio de "una función, una responsabilidad". Uno de los principios SOLID que se conoce como Single Responsibility.
+
+Por último, hay un manejo de error insuficiente,pues e realiza mediante impresiones directas en lugar de lanzar excepciones, lo que no es una práctica robusta.
+
