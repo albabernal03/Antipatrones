@@ -1,6 +1,5 @@
 from django.urls import path
-from .views import calcular
-
+from . import views
 urlpatterns = [
-    path('', calcular, name='calcular'),  # Puedes ajustar esto según tus necesidades
+    path('', views.calcular, name='calcular'),  # Puedes ajustar esto según tus necesidades
 ]
