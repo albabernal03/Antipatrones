@@ -58,7 +58,7 @@ Por último, hay un manejo de error insuficiente,pues e realiza mediante impresi
 
 ***
 
-## Respuesta punto 2:<a name="id1"></a>
+## Respuesta punto 2:<a name="id2"></a>
 
 Refactorización del código:
 
@@ -94,7 +94,7 @@ def calcular(operacion, num1, num2):
         
 
 ```
-## Respuesta punto 1:<a name="id1"></a>
+## Respuesta punto 3:<a name="id3"></a>
 
 Aquí vemos como mejoramos todo lo que mencionamos anteriormente:
 
