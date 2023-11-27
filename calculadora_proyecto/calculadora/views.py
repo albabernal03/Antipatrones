@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.conf import settings
+import os
 
 def calcular(request):
     if request.method == 'POST':
@@ -20,6 +22,7 @@ def calcular(request):
 
         return JsonResponse({'resultado': resultado})
     else:
-        print("Rendering template...")
         return render(request, 'calculadora/calculadora.html')
+
+    
 
